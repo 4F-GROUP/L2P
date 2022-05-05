@@ -1,4 +1,6 @@
 .titulo {
-text-align: center;
-
+    text-align: center;
+}
+#textarea{
+    resize: none;
 }
