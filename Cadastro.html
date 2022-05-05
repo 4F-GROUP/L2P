@@ -14,7 +14,7 @@
 </div>
 <body>
 
-<Form Cadastro>
+<Form Cadastro class="container">
     <div class="mb-3">
         <label for="formFile" class="form-label">Escolher Foto</label>
         <input class="form-control" type="file" id="formFile">
@@ -38,70 +38,75 @@
         </div>
                   
         <div class="col-sm">
-            <label for="Data de nascimento">Data de nascimento</label>
+          <label for="Data de nascimento">Data de nascimento</label>
           <input type="text" class="form-control" placeholder="dd/mm/aaaa" aria-label="Data de nascimento" required>
         </div>
       </div>
-    <div class="col-sm">
+
+    <div class="row g-3">
+      <div class="col-sm">
         <label for="endereco">Endereço</label>
         <input type="text" class="form-control" placeholder="Endereço" aria-label="Endereço" required>
-    </div>
-    <div class="col-sm">
+      </div>
+      <div class="col-sm">
         <label for="bairro">Bairro</label>
         <input type="text" class="form-control" placeholder="Bairro" aria-label="Bairro" required>
+      </div>
     </div>
-    <div class="escolaridade">
+    <div class="row g-3">
+      <div class="escolaridade col-sm">
         <label for="Escolaridade">Nível de Escolaridade</label>
         <select class="form-select" aria-label="Default select example">
-        <option selected>Escolha uma opção</option>
-        <option value="1">Ensino Fundamental Completo</option>
-        <option value="6">Ensino Fundamental Incompleto</option>
-        <option value="2">Ensino Médio Completo</option>
-        <option value="4">Ensino Médio Incompleto</option>
-        <option value="3">Ensino Superior Completo</option>
-        <option value="5">Ensino Superior Incompleto</option>
-    </select>
-    </div>
-
-    <div class="instituicao">
+          <option selected>Escolha uma opção</option>
+          <option value="1">Ensino Fundamental Completo</option>
+          <option value="6">Ensino Fundamental Incompleto</option>
+          <option value="2">Ensino Médio Completo</option>
+          <option value="4">Ensino Médio Incompleto</option>
+          <option value="3">Ensino Superior Completo</option>
+          <option value="5">Ensino Superior Incompleto</option>
+        </select>
+      </div>
+      <div class="instituicao col-sm">
         <label for="instituicao">Estuda em outra instituição atualmente</label>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Escolha uma opção</option>
-        <option value="1">Sim</option>
-        <option value="2">Não</option>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Escolha uma opção</option>
+          <option value="1">Sim</option>
+          <option value="2">Não</option>
+        </select>
     </div>
-      </select>
-
-      <div class="col-sm">
-        <label for="instituicao">Caso afirmativo, qual instituição?</label>
-        <input type="text" class="form-control" placeholder="Informe a instituição" aria-label="instituicao" required>
     </div>
 
     <div class="col-sm">
-        <label for="curso">Qual curso?</label>
-        <input type="text" class="form-control" placeholder="Informe o curso realizado" aria-label="curso" required>
+      <label for="instituicao">Caso afirmativo, qual instituição?</label>
+      <input type="text" class="form-control" placeholder="Informe a instituição" aria-label="instituicao" required>
     </div>
 
     <div class="col-sm">
-        <label for="motivo">Por qual motivo você escolheu se matricular em um curso do Senac RJ?</label>
-        <textarea rows="5" type="text" class="form-control" placeholder="Informe o motivo" aria-label="motivo" required></textarea>
+      <label for="curso">Qual curso?</label>
+      <input type="text" class="form-control" placeholder="Informe o curso realizado" aria-label="curso" required>
     </div>
 
     <div class="col-sm">
-        <label for="motivo">O que te levou a escolher este curso?</label>
-        <textarea rows="5" type="text" class="form-control" placeholder="Informe o motivo" aria-label="motivo" required></textarea>
+      <label for="motivo">Por qual motivo você escolheu se matricular em um curso do Senac RJ?</label>
+      <textarea rows="5" type="text" class="form-control" placeholder="Informe o motivo" aria-label="motivo" required></textarea>
+    </div>
+
+    <div class="col-sm">
+      <label for="motivo">O que te levou a escolher este curso?</label>
+      <textarea rows="5" type="text" class="form-control" placeholder="Informe o motivo" aria-label="motivo" required></textarea>
     </div>
 
     <div>
-        <label for="XP">Você tem experiência na área profissional do curso?</label>
-        <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua experiência" aria-label="XP" required></textarea>
+      <label for="XP">Você tem experiência na área profissional do curso?</label>
+      <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua experiência" aria-label="XP" required></textarea>
     </div>
+    
     <div>
-        <label for="Expectativas">Quais são as suas expectativas após a conclusão do curso?</label>
-        <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua expectativa" aria-label="expectativa" required></textarea>
-
+      <label for="Expectativas">Quais são as suas expectativas após a conclusão do curso?</label>
+      <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua expectativa" aria-label="expectativa" required></textarea>
     </div>
-      <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+    <!-- Botão Cadastrar -->
+    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
 <label class="btn btn-outline-primary" for="btn-check-outlined">Cadastrar</label><br>
 </Form>
 </body>
