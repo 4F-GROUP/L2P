@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="Cadastro.css">
 
-    <title>Document</title>
+    <title>Formulário de cadastro de estudante</title>
 </head>
 <div class="titulo text-info">
 <H1>Cadastro do Perfil do Estudante</H1>
@@ -19,52 +19,53 @@
 </div>
 <body>
 
-<Form Cadastro class="container">
-  <div class="mb-3">
+<Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container">
+  <!--<div class="mb-3">
     <label for="formFile" class="form-label">Escolher Foto</label>
     <input class="form-control" type="file" id="formFile">
-  </div>
+  </div> -->
 
   <div class="col-sm">
     <label for="CPF">CPF</label>
-    <input type="text" class="form-control" placeholder="CPF" aria-label="CPF" required>
+    <input class="form-control" name="inputCPF" type="text" placeholder="CPF" aria-label="CPF" >
   </div> 
 
   <div class="col-sm">
     <label for="Nome">Nome Completo</label>
-    <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome Completo" required>
+    <input class="form-control" name="inputNome" type="text" placeholder="Nome Completo" aria-label="Nome Completo" >
   </div>
 
   <div class="row g-3">
     <div class="col-sm-7">
       <label for="email">E-mail</label>
-      <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" required>
+      <input class="form-control" name="inputEmail" type="email" placeholder="E-mail" aria-label="E-mail" >
     </div>
     <div class="col-sm">
       <label for="tel">Telefone</label>
-      <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" required>
+      <input class="form-control" name="inputTelefone" type="text" placeholder="Telefone" aria-label="Telefone" >
     </div>       
     <div class="col-sm">
       <label for="Data de nascimento">Data de nascimento</label>
-      <input type="date" class="form-control" placeholder="dd/mm/aaaa" aria-label="Data de nascimento" required>
+      <input class="form-control" name="inputNascimento" type="text" placeholder="dd/mm/aaaa" aria-label="Data de nascimento" >
     </div>
   </div>
 
   <div class="row g-3">
     <div class="col-sm">
       <label for="endereco">Endereço</label>
-      <input type="text" class="form-control" placeholder="Endereço" aria-label="Endereço" required>
+      <input class="form-control"  name="inputEndereco" type="text" placeholder="Endereço" aria-label="Endereço" >
     </div>
+
     <div class="col-sm">
       <label for="bairro">Bairro</label>
-      <input type="text" class="form-control" placeholder="Bairro" aria-label="Bairro" required>
+      <input class="form-control" name="inputBairro" type="text" placeholder="Bairro" aria-label="Bairro" >
     </div>
   </div>
 
   <div class="row g-3">
     <div class="escolaridade col-sm">
       <label for="Escolaridade">Nível de Escolaridade</label>
-      <select class="form-select" aria-label="Default select example">
+      <select class="form-select" name="inputEscolaridade"  aria-label="Default select example">
         <option selected>Escolha uma opção</option>
         <option value="1">Ensino Fundamental Completo</option>
         <option value="6">Ensino Fundamental Incompleto</option>
@@ -76,54 +77,42 @@
     </div>
     <div class="instituicao col-sm">
       <label for="instituicao">Estuda em outra instituição atualmente</label>
-      <select class="form-select" aria-label="Default select example">
+      <select class="form-select" name="inputInstituicao" aria-label="Default select example">
         <option selected>Escolha uma opção</option>
         <option value="1">Sim</option>
         <option value="2">Não</option>
       </select>
     </div>
   </div>
-
-    <div>
-      <label for="XP">Você tem experiência na área profissional do curso?</label>
-      <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua experiência" aria-label="XP" required></textarea>
-    </div>
-    
-    <div>
-      <label for="Expectativas">Quais são as suas expectativas após a conclusão do curso?</label>
-      <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua expectativa" aria-label="expectativa" required></textarea>
-    </div>
-    <!-- Botão Cadastrar -->
-    
  
   <div class="col-sm">
     <label for="instituicao">Caso afirmativo, qual instituição?</label>
-    <input type="text" class="form-control" placeholder="Informe a instituição" aria-label="instituicao" required>
+    <input class="form-control" name="inputInstituicaoNome" type="text"  placeholder="Informe a instituição" aria-label="instituicao" >
   </div>
 
   <div class="col-sm">
     <label for="curso">Qual curso?</label>
-    <input type="text" class="form-control" placeholder="Informe o curso realizado" aria-label="curso" required>
+    <input class="form-control" name="inputCurso" type="text" placeholder="Informe o curso realizado" aria-label="curso" >
   </div>
 
   <div class="col-sm">
     <label for="motivo">Por qual motivo você escolheu se matricular em um curso do Senac RJ?</label>
-    <textarea rows="5" type="text" class="form-control" placeholder="Informe o motivo" aria-label="motivo" required></textarea>
+    <textarea class="form-control" name="inputMotivo" rows="5" type="text" placeholder="Informe o motivo" aria-label="motivo" ></textarea>
   </div>
 
   <div class="col-sm">
     <label for="motivo">O que te levou a escolher este curso?</label>
-    <textarea rows="5" type="text" class="form-control" placeholder="Informe o motivo" aria-label="motivo" required></textarea>
+    <textarea class="form-control" name="inputEscolha" rows="5" type="text" placeholder="Informe o motivo" aria-label="motivo" ></textarea>
   </div>
 
   <div>
     <label for="XP">Você tem experiência na área profissional do curso?</label>
-    <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua experiência" aria-label="XP" required></textarea>
+    <textarea class="form-control" name="inputExperiencia" rows="5" type="text" placeholder="Informe a sua experiência" aria-label="XP" ></textarea>
   </div>
   
   <div>
     <label for="Expectativas">Quais são as suas expectativas após a conclusão do curso?</label>
-    <textarea rows="5" type="text" class="form-control" placeholder="Informe a sua expectativa" aria-label="expectativa" required></textarea>
+    <textarea class="form-control" name="inputExpectativa" rows="5" type="text" placeholder="Informe a sua expectativa" aria-label="expectativa" ></textarea>
   </div>
   <!-- Botão Cadastrar -->
   <button class="btn btn-outline-primary" type="submit">Cadastrar</button>

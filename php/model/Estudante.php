@@ -6,12 +6,12 @@
         private int $cpf;
         private string $nome;
         private string $email;
-        private string $telefone;
-        private string $nascimento;
+        private int $telefone;
+        private int $nascimento;
         private string $endereco;
         private string $bairro;
-        private string $escolaridade;
-        private string $instituicao;
+        private int $escolaridade;
+        private int $instituicao;
         private string $instituicaonome;
         private string $curso;
         private string $motivo;
@@ -54,19 +54,19 @@
             $this->email = $email;
         }
         
-        public function getTelefone(): string {
+        public function getTelefone(): int {
             return $this->telefone;
         }
 
-        public function setTelefone(string $telefone): void {
+        public function setTelefone(int $telefone): void {
             $this->telefone = $telefone;
         }
         
-        public function getNascimento(): string {
+        public function getNascimento(): int {
             return $this->nascimento;
         }
 
-        public function setNascimento(string $nascimento): void {
+        public function setNascimento(int $nascimento): void {
             $this->nascimento = $nascimento;
         }
         
@@ -86,19 +86,19 @@
             $this->bairro = $bairro;
         }
         
-        public function getEscolaridade(): string {
+        public function getEscolaridade(): int {
             return $this->escolaridade;
         }
 
-        public function setEscolaridade(string $escolaridade): void {
+        public function setEscolaridade(int $escolaridade): void {
             $this->escolaridade = $escolaridade;
         }
         
-        public function getInstituicao(): string {
+        public function getInstituicao(): int {
             return $this->instituicao;
         }
 
-        public function setInstituicao(string $instituicao): void {
+        public function setInstituicao(int $instituicao): void {
             $this->instituicao = $instituicao;
         }
         
@@ -125,7 +125,7 @@
         public function setMotivo(string $motivo): void {
             $this->motivo = $motivo;
         }
-        
+                
         public function getEscolha(): string {
             return $this->escolha;
         }
