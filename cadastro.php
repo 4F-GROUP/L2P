@@ -20,10 +20,10 @@
 <body>
 
 <Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container">
-  <!--<div class="mb-3">
+  <div class="mb-3">
     <label for="formFile" class="form-label">Escolher Foto</label>
     <input class="form-control" type="file" id="formFile">
-  </div> -->
+  </div>
 
   <div class="col-sm">
     <label for="CPF">CPF</label>
@@ -114,10 +114,13 @@
     <label for="Expectativas">Quais são as suas expectativas após a conclusão do curso?</label>
     <textarea class="form-control" name="inputExpectativa" rows="5" type="text" placeholder="Informe a sua expectativa" aria-label="expectativa" ></textarea>
   </div>
+  <hr>
   <!-- Botão Cadastrar -->
   <button class="btn btn-outline-primary" type="submit">Cadastrar</button>
   <!--   <button class="btn btn-outline-primary" type="submit">Limpar Tela</button> -->
+
 </Form>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

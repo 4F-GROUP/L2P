@@ -15,7 +15,7 @@
             return $this->repository->fnUpdateEstudante($estudante);
         }
         
-        public function listar($limit) {
+        public function listar($limit = 9999) {
             return $this->repository->fnListEstudante($limit);
         }
 
