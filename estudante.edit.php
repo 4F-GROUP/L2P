@@ -41,10 +41,10 @@
 
     if($service->atualizar($estudante))
     {
-        header('location: ./home?success=true');
+        header('location: ./estudantes?success=true');
         exit;
     } else {
-        header('location: ./home?error=true');
+        header('location: ./estudantes?error=true');
         exit;
     }
 

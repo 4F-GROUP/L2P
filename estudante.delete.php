@@ -7,10 +7,10 @@
 
     if($service->deletar($id))
     {
-        header('location: ./home?success=true');
+        header('location: ./estudantes?success=true');
         exit;
     } else {
-        header('location: ./home?error=true');
+        header('location: ./estudantes?error=true');
         exit;
     }
 

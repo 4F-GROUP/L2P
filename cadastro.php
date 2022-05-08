@@ -1,5 +1,47 @@
 <?php 
   require_once('config/config.php');
+
+if (isset($_FILES['Upload'])) {
+    $dir = "./resources/fotos/"; # caminho onde será salvo o arquivo
+
+    $originalFilename = basename($_FILES['Upload']['name']);
+    $filename = $dir 
+        . sha1(uniqid(mt_rand() + time(), true)) 
+        . substr(
+            $originalFilename, 
+            strpos($originalFilename, '.'), 
+            strlen($originalFilename)
+        );
+
+    $filenameArray = pathinfo($filename);
+
+    $ext = array("jpeg", "jpg", "gif");
+    $isGood = 0;
+
+    if (file_exists($filename)) {
+        echo "The file already exists<br>";
+        $isGood = 1;
+    }
+
+    if ($_FILES['Upload']['size'] > 10000000) { # tamanho em bytes
+        echo "File is over 10MB in size<br>";
+        $isGood = 1;
+    }
+
+    if (!in_array($filenameArray['extension'], $ext)) {
+        echo "File Type is not Allowed (Upload jpeg, jpg, gif)<br>";
+        $isGood = 1;
+    }
+
+    if ($isGood != 1) {
+        if (move_uploaded_file($_FILES['Upload']['tmp_name'], $filename)) {
+            echo "<p>File was uploaded --> " . $filenameArray["basename"];
+        } else {
+            echo "Upload failed" . $_FILES['Upload']['name'];
+        }
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +51,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
 
     <title>Formulário de cadastro de estudante</title>
 </head>
@@ -19,10 +61,10 @@
 </div>
 <body>
 
-<Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container">
+<Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container" enctype="multipart/form-data">
   <div class="mb-3">
-    <label for="formFile" class="form-label">Escolher Foto</label>
-    <input class="form-control" type="file" id="formFile">
+        <input type="file" name="Upload" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
+        <input type="submit">
   </div>
 
   <div class="col-sm">
