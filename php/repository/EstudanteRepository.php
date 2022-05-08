@@ -49,7 +49,7 @@ class EstudanteRepository
     {
         try {
 
-            $query = "UPDATE estudante set cpf = :pcpf, nome = :pnome, email = :pemail, telefone = :ptelefone, nascimento = :pnascimento, endereco = :pendereco, bairro = pbairro, escolaridade = :pescolaridade, instituicao = :pinstituicao, instituicaonome = :pinstituicaonome, curso = :pcurso, motivo = :pmotivo, escolha = :pescolha, experiencia = :pexperiencia, expectativa = :pexpectativa WHERE id = :pid";
+            $query = "UPDATE estudante SET cpf = :pcpf, nome = :pnome, email = :pemail, telefone = :ptelefone, nascimento = :pnascimento, endereco = :pendereco, bairro = :pbairro, escolaridade = :pescolaridade, instituicao = :pinstituicao, instituicaonome = :pinstituicaonome, curso = :pcurso, motivo = :pmotivo, escolha = :pescolha, experiencia = :pexperiencia, expectativa = :pexpectativa WHERE id = :pid";
 
             $stmt = $this->conn->prepare($query);
             $stmt->bindValue(":pid", $estudante->getId());

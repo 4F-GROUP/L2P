@@ -46,7 +46,6 @@
             <label for="Nome">Nome Completo</label>
             <input class="form-control" name="inputNome" value="<?= $estudante->getNome() ?>" type="text" placeholder="Nome Completo" aria-label="Nome Completo" >
         </div>
-
         <div class="row g-3">
             <div class="col-sm-7">
             <label for="email">E-mail</label>
@@ -71,9 +70,8 @@
             <div class="col-sm">
             <label for="bairro">Bairro</label>
             <input class="form-control" name="inputBairro" value="<?= $estudante->getBairro() ?>" type="text" placeholder="Bairro" aria-label="Bairro" >
-            </div>
+            </div> 
         </div>
-
         <div class="row g-3">
             <div class="escolaridade col-sm">
             <label for="Escolaridade">Nível de Escolaridade</label>
