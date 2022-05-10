@@ -42,6 +42,9 @@
                                 <p>
                                     <a href="cadastro" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Adicionar Estudante</a>
                                 </p>
+                                <p>
+                                    <a href="estudantes" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Listar Estudantes</a>
+                                </p>
                                 <?php foreach ($EstudanteService->listar(20) as $index => $estudante): ?>
                                 <div class="col-12 col-sm-4">
                                     <div class="info-box bg-light">

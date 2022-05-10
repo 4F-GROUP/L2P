@@ -18,3 +18,13 @@ create table if not exists estudante(
     expectativa varchar(500) not null,
     criado_em timestamp not null default current_timestamp
 );
+
+drop table if exists usuario cascade;
+create table if not exists usuario(
+    id serial primary key,
+    matricula int not null,
+    nome varchar(150) not null,
+    email varchar(150) not null,
+    senha varchar(150) not null,
+    criado_em timestamp not null default current_timestamp
+);
