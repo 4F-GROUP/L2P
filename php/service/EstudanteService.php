@@ -7,15 +7,15 @@
             $this->repository = new EstudanteRepository();
         }
 
-        public function cadastrar($estudante): bool {
+        public function cadastrar(Estudante $estudante): bool {
             return $this->repository->fnAddEstudante($estudante);
         }
         
-        public function atualizar($estudante): bool {
+        public function atualizar(Estudante $estudante): bool {
             return $this->repository->fnUpdateEstudante($estudante);
         }
         
-        public function listar($limit) {
+        public function listar($limit = 9999) {
             return $this->repository->fnListEstudante($limit);
         }
 
