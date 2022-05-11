@@ -1,11 +1,75 @@
 .titulo {
 text-align: center;
+}
+
+.menu{
+    background-color: #EFEFEF;
+    color: #00468D;
 
 }
 
-.container{
-    text-align:center;
+.example {
+    margin-left: 25%;
+    color: #fff;
+  }
+  .example-item {
+    width: 250px;
+    height: 250px;
+    line-height: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 8% 7%;
+    font-size: 34px;
+    font-weight: bolder;
+  }
+  .example-item_1 {
+  
+    float: left;
+    text-align: right;
+  }
+  .example-item_2 {
+  
+    float: left;
+    text-align: right;
+  }
+  .example-item_3 {
+  
+    float: left;
+    text-align: right;
+  }
+  .example-item_4 {
+  
+    float: left;
+    
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .example-item_3 {
+      clear: left;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .example-item_2,
+    .example-item_3,
+    .example-item_4 {
+      clear: left;
+    }
+  }
+
+
+  .botao {
+    width: 40%;
+    height: 40%;
+    line-height: 80%;
+    text-align: center;
+    display: inline-block;
+    margin: 22% 30%;
+    font-size: 34px;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+ #funcionario{
+margin-left: 25%;
 }
-
-
-
