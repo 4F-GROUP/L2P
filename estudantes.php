@@ -12,21 +12,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="Cadastro.css">
 
-    <title>Document</title>
+    <title>Alunos</title>
 </head>
-<div class="titulo text-info">
-<H1>Sistema de Controle de Estudantes</H1>
-<img src="Imagens\user.png" height="20%" width="20%" alt="">
-</div>
 <body>
 
 <section class="page-section" id="estudante">
     <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Sistema de Gerenciamento de Estudantes</h2>
+        <div class="text-center titulo mt-4">
+            <h2 class="section-heading">Sistema de Gerenciamento de Estudantes</h2>
             <h3 class="section-subheading text-muted">Utilize a tabela abaixo para editar ou excluir as informações sobre os estudantes.</h3>
         </div>
-        <table class="table table-stripped" style="color: black;">
+        <table class="table table-stripped table-hover" style="color: black;">
             <thead>
                 <th>#</th>
                 <th>CPF</th>

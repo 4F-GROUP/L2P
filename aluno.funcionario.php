@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body> 
+    
     <div class="botao">
-        <a href="cadastro.php">  <button type="button" class="btn btn-primary btn-lg">Cadastrar Aluno</button> </a>
-       
-        <a href="cadastro.funcionario.php"> <button type="button" class="btn btn-primary btn-lg">Cadastrar Funcionário</button> </a>
+        <div class="btn-group btn-group-lg" role="group" aria-label="button-group">
+            <button type="button" class="btn btn-outline-warning"><a class="link-dark text-decoration-none" href="cadastro.php">Cadastrar Aluno</a></button>
+            <button type="button" class="btn btn-outline-warning"><a class="link-dark text-decoration-none" href="cadastro.funcionario.php">Cadastrar Funcionário</a></button>
+        </div>
     </div> 
-
-
-   
+    
 </body>
 </html>

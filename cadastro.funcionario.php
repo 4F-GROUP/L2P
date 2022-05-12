@@ -9,9 +9,8 @@
 
     <title>Cadastro</title>
 </head>
-<div class="titulo text-info">
-<H1>Cadastro de funcionário</H1>
-
+<div class="titulo">
+  <H1>Cadastro de funcionário</H1>
 </div>
 <body>
 

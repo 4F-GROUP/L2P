@@ -9,7 +9,7 @@
 
     <title>Login</title>
 </head>
-<div class="titulo text-info">
+<div class="titulo">
 <H1>Login de funcionário</H1>
 
 </div>

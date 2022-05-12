@@ -55,7 +55,7 @@ if (isset($_FILES['Upload'])) {
 
     <title>Formulário de cadastro de estudante</title>
 </head>
-<div class="titulo text-info">
+<div class="titulo">
 <H1>Cadastro do Perfil do Estudante</H1>
 <img src="Imagens\user.png" height="20%" width="20%" alt="">
 </div>
