@@ -12,14 +12,13 @@
     <div class="navbar">
     <nav class="navbar navbar-light">
         <div class="container-fluid">        
-            <button type="button" class="btn btn-outline-danger"><i class="bi bi-box-arrow-left"><a href="logout.php"></i> Sair</button>         
+            <button type="button" class="btn btn-outline-danger"><a href="logout.php"><i class="bi bi-box-arrow-left"></i> Sair</button>         
         </div>
       </nav>
     </div>
     <div class="menu">
         <div class="example-item example-item_1"> <a href="aluno.funcionario.php"> <img src="Imagens/cadastro 1.png"></a> Cadastro  </div>
         <div class="example-item example-item_2"> <a href="estudantes.php"> <img src="Imagens/listar 1.png"></a> Alunos  </div>
-        <div class="example-item example-item_3"> <a href="login.funcionario.php"> <img src="Imagens/login 1.png"> </a>Login </div>
     </div>
 </body>
 </html>
