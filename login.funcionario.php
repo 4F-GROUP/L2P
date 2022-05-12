@@ -13,34 +13,35 @@
 <H1>Login de funcionário</H1>
 
 </div>
-<body>
+<body class="bg-light p-2 bg-opacity-50">
 
-    <Form Cadastro class="funcionario">
-      
-        <div class="col-sm-7">
-          <label for="matricula">Matrícula</label>
-          <input type="text" class="form-control" placeholder="matricula" aria-label="matricula" required>
-        </div> 
-      
-        <div class="col-sm-7">
-          <label for="Nome">Nome Completo</label>
-          <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome Completo" required>
-        </div>
-      
-          <div class="col-sm-7">
-            <label for="email">E-mail</label>
-            <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" required>
-        </div>  
+  <Form Cadastro class="funcionario container">
+    <div class="ms-5">
+      <div class="col-sm-7">
+        <label for="matricula">Matrícula</label>
+        <input type="text" class="form-control" placeholder="matricula" aria-label="matricula" required>
+      </div> 
+    
+      <div class="col-sm-7">
+        <label for="Nome">Nome Completo</label>
+        <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome Completo" required>
+      </div>
+    
+      <div class="col-sm-7">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" required>
+      </div>  
 
-        <div class="col-sm-7">
-            <label for="senha">Senha</label>
-            <input type="password" class="form-control" placeholder="Senha" aria-label="Senha" required>
-          </div>          
-<br>
-  <!-- Botão Entrar-->
-  <button class="btn btn-outline-primary" type="submit">Entrar</button>
-  <!--   <button class="btn btn-outline-primary" type="submit">Limpar Tela</button> -->
-</Form>
+      <div class="col-sm-7">
+        <label for="senha">Senha</label>
+        <input type="password" class="form-control" placeholder="Senha" aria-label="Senha" required>
+      </div>          
+      <br>
+      <!-- Botão Entrar-->
+      <button class="btn btn-warning link-dark" type="submit">Entrar</button>
+      <!--   <button class="btn btn-outline-primary" type="submit">Limpar Tela</button> -->
+    </div>
+  </Form>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

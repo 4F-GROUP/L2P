@@ -6,6 +6,10 @@
   color: #00468D;
 }
 
+#textarea{
+  resize: none;
+}
+
 .menu{
   background-color: #EFEFEF;
   color: #00468D;

@@ -59,12 +59,12 @@ if (isset($_FILES['Upload'])) {
 <H1>Cadastro do Perfil do Estudante</H1>
 <img src="Imagens\user.png" height="20%" width="20%" alt="">
 </div>
-<body>
+<body class="bg-light p-2 bg-opacity-50">
 
 <Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container" enctype="multipart/form-data">
   <div class="mb-3">
-        <input type="file" name="Upload" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
-        <input type="submit">
+    <input type="file" name="Upload" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
+    <input type="submit">
   </div>
 
   <div class="col-sm">
@@ -139,26 +139,26 @@ if (isset($_FILES['Upload'])) {
 
   <div class="col-sm">
     <label for="motivo">Por qual motivo você escolheu se matricular em um curso do Senac RJ?</label>
-    <textarea class="form-control" name="inputMotivo" rows="5" type="text" placeholder="Informe o motivo" aria-label="motivo" ></textarea>
+    <textarea class="form-control" name="inputMotivo" rows="5" type="text" placeholder="Informe o motivo" aria-label="motivo" id="textarea"></textarea>
   </div>
 
   <div class="col-sm">
     <label for="motivo">O que te levou a escolher este curso?</label>
-    <textarea class="form-control" name="inputEscolha" rows="5" type="text" placeholder="Informe o motivo" aria-label="motivo" ></textarea>
+    <textarea class="form-control" name="inputEscolha" rows="5" type="text" placeholder="Informe o motivo" aria-label="motivo" id="textarea"></textarea>
   </div>
 
   <div>
     <label for="XP">Você tem experiência na área profissional do curso?</label>
-    <textarea class="form-control" name="inputExperiencia" rows="5" type="text" placeholder="Informe a sua experiência" aria-label="XP" ></textarea>
+    <textarea class="form-control" name="inputExperiencia" rows="5" type="text" placeholder="Informe a sua experiência" aria-label="XP" id="textarea"></textarea>
   </div>
   
   <div>
     <label for="Expectativas">Quais são as suas expectativas após a conclusão do curso?</label>
-    <textarea class="form-control" name="inputExpectativa" rows="5" type="text" placeholder="Informe a sua expectativa" aria-label="expectativa" ></textarea>
+    <textarea class="form-control" name="inputExpectativa" rows="5" type="text" placeholder="Informe a sua expectativa" aria-label="expectativa" id="textarea"></textarea>
   </div>
   <hr>
   <!-- Botão Cadastrar -->
-  <button class="btn btn-outline-primary" type="submit">Cadastrar</button>
+  <button class="btn btn-warning link-dark mb-3" type="submit">Cadastrar</button>
   <!--   <button class="btn btn-outline-primary" type="submit">Limpar Tela</button> -->
 
 </Form>

@@ -12,7 +12,7 @@
 <div class="titulo">
   <H1>Cadastro de funcionário</H1>
 </div>
-<body>
+<body class="bg-light p-2 bg-opacity-50">
 
   <Form Cadastro class="funcionario" action="user.register" method="post" >
 
@@ -42,7 +42,7 @@
   </div>          
   <br>
   <!-- Botão Cadastrar -->
-  <button class="btn btn-outline-primary" type="submit">Cadastrar</button>
+  <button class="btn btn-warning link-dark" type="submit">Cadastrar</button>
   <!--   <button class="btn btn-outline-primary" type="submit">Limpar Tela</button> -->
   </Form>
 </body>
