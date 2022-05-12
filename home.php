@@ -6,7 +6,7 @@
 
     <title>Layout Responsivo</title>
 
-    <link rel="stylesheet" href="css\cadastro.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
     <div class="navbar">

@@ -9,7 +9,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jubileu Camisas | Loja Oficial de Camisas</title>
+  <title>User Details</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
