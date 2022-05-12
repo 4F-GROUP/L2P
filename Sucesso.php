@@ -1,6 +1,5 @@
 <?php 
   require_once('config/config.php');
-  $EstudanteService = new EstudanteService(); 
 ?>
 
 <!DOCTYPE html>
@@ -15,52 +14,13 @@
 
     <title>Home</title>
 </head>
-<div class="titulo text-info">
-<H1>Sistema de Controle de Estudantes</H1>
-<img src="Imagens\user.png" height="20%" width="20%" alt="">
-</div>
 <body>
 
 <section class="content">
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title"><strong>Senac</strong>|Stock</h3>
-            <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                    <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-lg-8 order-2 order-md-1">
-                        <div class="row">
-                            <div class="col-12">
-                                <h4>Últimos estudantes adicionados</h4>
-                                <p>
-                                    <a href="cadastro" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Adicionar Estudante</a>
-                                </p>
-                                <p>
-                                    <a href="estudantes" class="link-black text-sm"><i class="fas fa-link mr-1"></i>Listar Estudantes</a>
-                                </p>
-                                <?php foreach ($EstudanteService->listar(20) as $index => $estudante): ?>
-                                <div class="col-12 col-sm-4">
-                                    <div class="info-box bg-light">
-                                        <div class="info-box-content">
-                                            <span class="info-box-text text-center text-muted"><?= $estudante->getCPF() ?></span>
-                                            <span class="info-box-number text-center text-muted mb-0"><?= $estudante->getNome() ?></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>
-                                    <a href="estudante.details?id=<?= $estudante->getId() ?>" class="link-black text-sm"><i class="fas fa-link mr-1"></i> Veja detalhes</a>
-                                </p>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
                         <h3 class="text-primary"><i class="fas fa-box-archive"></i> <strong>Senac</strong>|Stock</h3>
                         <p class="text-muted">Sistema de cadastro para os estudantes do SENAC.</p>
@@ -78,6 +38,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="menu">
+                <div class="example-item example-item_1"> <a href="cadastro.php"> <img src="Imagens/cadastro 1.png"></a> Cadastro Estudante  </div>
+                <div class="example-item example-item_3"> <a href="cadastro.funcionario.php"> <img src="Imagens/login 1.png"> </a>Cadastro Funcionário </div>
+                <div class="example-item example-item_2"> <a href="estudantes.php"> <img src="Imagens/listar 1.png"></a> Alunos  </div>
             </div>
         </div>
     </div>
