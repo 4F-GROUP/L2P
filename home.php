@@ -21,7 +21,7 @@
     <div class="menu">
         <div class="example-item example-item_1"> <a href="aluno.funcionario.php"> <img src="Imagens/cadastro 1.png"></a> Cadastro  </div>
         <div class="example-item example-item_2"> <a href="estudantes.php"> <img src="Imagens/listar 1.png"></a> Alunos  </div>
-        <div class="example-item example-item_3"> <a href="LoginFuncionario.php"> <img src="Imagens/login 1.png"> </a>Login </div>
+        <div class="example-item example-item_3"> <a href="login.funcionario.php"> <img src="Imagens/login 1.png"> </a>Login </div>
     </div>
 </body>
 </html>

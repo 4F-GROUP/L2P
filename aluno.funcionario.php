@@ -12,7 +12,7 @@
     <div class="botao">
         <a href="cadastro.php">  <button type="button" class="btn btn-primary btn-lg">Cadastrar Aluno</button> </a>
        
-    <a href="CadastroFuncionario.html"> <button type="button" class="btn btn-primary btn-lg">Cadastrar Funcionário</button> </a>
+    <a href="cadastro.funcionario.php"> <button type="button" class="btn btn-primary btn-lg">Cadastrar Funcionário</button> </a>
     </div> 
 
 
