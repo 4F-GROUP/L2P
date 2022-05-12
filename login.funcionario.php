@@ -15,26 +15,15 @@
 </div>
 <body class="bg-light p-2 bg-opacity-50">
 
-  <Form Cadastro class="funcionario container">
+  <Form Cadastro class="funcionario container" action="user.login" method="post">
     <div class="ms-5">
       <div class="col-sm-7">
         <label for="matricula">Matrícula</label>
-        <input type="text" class="form-control" placeholder="matricula" aria-label="matricula" required>
+        <input type="text" name="inputMatricula" class="form-control" placeholder="matricula" aria-label="matricula" required>
       </div> 
-    
-      <div class="col-sm-7">
-        <label for="Nome">Nome Completo</label>
-        <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome Completo" required>
-      </div>
-    
-      <div class="col-sm-7">
-        <label for="email">E-mail</label>
-        <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" required>
-      </div>  
-
       <div class="col-sm-7">
         <label for="senha">Senha</label>
-        <input type="password" class="form-control" placeholder="Senha" aria-label="Senha" required>
+        <input type="password" name="inputSenha" class="form-control" placeholder="Senha" aria-label="Senha" required>
       </div>          
       <br>
       <!-- Botão Entrar-->

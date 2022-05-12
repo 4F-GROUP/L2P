@@ -64,10 +64,10 @@ class UsuarioRepository
     {
         try {
 
-            $query = "select id, nome, email from usuario where email = :pemail and senha = :psenha";
+            $query = "SELECT id, matricula, nome, email FROM usuario WHERE matricula = :pmatricula and senha = :psenha";
 
             $stmt = $this->conn->prepare($query);
-            $stmt->bindValue(":pemail", $usuario->getEmail());
+            $stmt->bindValue(":pmatricula", $usuario->getMatricula());
             $stmt->bindValue(":psenha", md5($usuario->getSenha()));
 
             if ($stmt->execute())
@@ -85,7 +85,7 @@ class UsuarioRepository
         }
     }
 
-    public function fnLisUsuarios($limit = 9999) {
+    public function fnListUsuarios($limit = 9999) {
         try {
 
             $query = "select id, nome, email, criado_em criadoem  from usuario limit :plimit";

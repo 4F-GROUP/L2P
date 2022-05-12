@@ -12,7 +12,7 @@
     <div class="navbar">
     <nav class="navbar navbar-light">
         <div class="container-fluid">        
-            <button type="button" class="btn btn-outline-danger"><i class="bi bi-box-arrow-left"></i> Sair</button>         
+            <button type="button" class="btn btn-outline-danger"><i class="bi bi-box-arrow-left"><a href="logout.php"></i> Sair</button>         
         </div>
       </nav>
     </div>
