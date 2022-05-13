@@ -13,7 +13,9 @@
   <H1>Cadastro de funcionário</H1>
 </div>
 <body class="bg-light p-2 bg-opacity-50">
-
+<?php 
+	require("./navbar.php");
+?>
   <Form Cadastro class="funcionario" action="user.register" method="post" >
 
   <div class="col-sm-7">

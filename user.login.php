@@ -28,11 +28,11 @@
     if($user = $service->login($usuario))
     {
         $_SESSION['usuario'] = $user->getNome();
-        header('location: ./home.php');
+        header('location: ./home');
         exit;
     } else {
         $_SESSION['error'] = 'Verifique login/senha';
-        header('location: ./home.php');
+        header('location: ./home');
         exit;
     }
 

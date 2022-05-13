@@ -15,7 +15,9 @@
     <title>Alunos</title>
 </head>
 <body>
-
+<?php 
+	require("./navbar.php");
+?>
 <section class="page-section" id="estudante">
     <div class="container">
         <div class="text-center titulo mt-4">

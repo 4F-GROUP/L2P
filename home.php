@@ -8,14 +8,13 @@
 
     <link rel="stylesheet" href="./css/cadastro.css">
 </head>
+
+
 <body>
-    <div class="navbar">
-    <nav class="navbar navbar-light">
-        <div class="container-fluid">        
-            <button type="button" class="btn btn-outline-danger"><a href="logout.php"><i class="bi bi-box-arrow-left"></i> Sair</button>         
-        </div>
-      </nav>
-    </div>
+    <?php 
+	require("./navbar.php");
+?>
+    
     <div class="menu">
         <div class="example-item example-item_1"> <a href="cadastro.php"> <img src="Imagens/cadastro 1.png"></a> Cadastro Estudante  </div>
         <div class="example-item example-item_3"> <a href="cadastro.funcionario.php"> <img src="Imagens/login 1.png"> </a>Cadastro Funcionário </div>

@@ -20,7 +20,7 @@
         }
         
         public function listar($limit) {
-            return $this->repository->fnLisUsuarios($limit);
+            return $this->repository->fnListUsuarios($limit);
         }
 
         public function localizar($id) {

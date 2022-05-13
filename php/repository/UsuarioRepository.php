@@ -88,7 +88,7 @@ class UsuarioRepository
     public function fnListUsuarios($limit = 9999) {
         try {
 
-            $query = "select id, nome, email, criado_em criadoem  from usuario limit :plimit";
+            $query = "select id, matricula, nome, email, criado_em criadoem  from usuario limit :plimit";
 
             $stmt = $this->conn->prepare($query);
             $stmt->bindParam(':plimit', $limit);

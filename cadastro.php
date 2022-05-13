@@ -60,7 +60,9 @@ if (isset($_FILES['Upload'])) {
 <img src="Imagens\user.png" height="20%" width="20%" alt="">
 </div>
 <body class="bg-light p-2 bg-opacity-50">
-
+<?php 
+	require("./navbar.php");
+?>
 <Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container" enctype="multipart/form-data">
   <div class="mb-3">
     <input type="file" name="Upload" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
