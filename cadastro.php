@@ -1,47 +1,5 @@
 <?php 
   require_once('config/config.php');
-
-if (isset($_FILES['Upload'])) {
-    $dir = "./resources/fotos/"; # caminho onde será salvo o arquivo
-
-    $originalFilename = basename($_FILES['Upload']['name']);
-    $filename = $dir 
-        . sha1(uniqid(mt_rand() + time(), true)) 
-        . substr(
-            $originalFilename, 
-            strpos($originalFilename, '.'), 
-            strlen($originalFilename)
-        );
-
-    $filenameArray = pathinfo($filename);
-
-    $ext = array("jpeg", "jpg", "gif");
-    $isGood = 0;
-
-    if (file_exists($filename)) {
-        echo "The file already exists<br>";
-        $isGood = 1;
-    }
-
-    if ($_FILES['Upload']['size'] > 10000000) { # tamanho em bytes
-        echo "File is over 10MB in size<br>";
-        $isGood = 1;
-    }
-
-    if (!in_array($filenameArray['extension'], $ext)) {
-        echo "File Type is not Allowed (Upload jpeg, jpg, gif)<br>";
-        $isGood = 1;
-    }
-
-    if ($isGood != 1) {
-        if (move_uploaded_file($_FILES['Upload']['tmp_name'], $filename)) {
-            echo "<p>File was uploaded --> " . $filenameArray["basename"];
-        } else {
-            echo "Upload failed" . $_FILES['Upload']['name'];
-        }
-    }
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -63,12 +21,37 @@ if (isset($_FILES['Upload'])) {
 <?php 
 	require("./navbar.php");
 ?>
-<Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container" enctype="multipart/form-data">
-  <div class="mb-3">
-    <input type="file" name="Upload" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
-    <input type="submit">
-  </div>
+<form method="POST" enctype="multipart/form-data">		
 
+<label for="conteudo">Enviar imagem:</label>
+<input type="file" name="pic" accept="image/*" class="form-control">
+
+<div align="center">
+  <button type="submit" class="btn btn-success">Enviar imagem</button>
+</div>
+</form>
+<?php
+    if(isset($_FILES['pic']))
+    {
+      $ext = strtolower(substr($_FILES['pic']['name'],-4)); //Pegando extensão do arquivo
+      $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
+      $dir = './imagens/'; //Diretório para uploads
+ 
+      move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
+	  	  echo '<div class="alert alert-success" role="alert" align="center">
+	  
+	  <img src="./imagens/' . $new_name . '" class="img img-responsive img-thumbnail" width="200"> 
+	  <br>
+	  Imagem enviada com sucesso!
+	  <br>
+	  <a href="exemplo_upload_de_imagens.php">
+		<button class="btn btn-default">Enviar nova imagem</button>
+	  </a>
+	  
+	  </div>';
+    }  
+?>
+<Form id="estudanteForm" method="POST" action="estudante.register" Cadastro class="container" enctype="multipart/form-data">
   <div class="col-sm">
     <label for="CPF">CPF</label>
     <input class="form-control" name="inputCPF" type="text" placeholder="CPF" aria-label="CPF" >
