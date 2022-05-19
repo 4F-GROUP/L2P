@@ -9,44 +9,44 @@
 
     <title>Cadastro</title>
 </head>
-<div class="titulo">
-  <H1>Cadastro de funcionário</H1>
-</div>
-<body class="bg-light p-2 bg-opacity-50">
 <?php 
 	require("./navbar.php");
 ?>
-  <Form Cadastro class="funcionario" action="user.register" method="post" >
+<div class="titulo" style="margin-top: 8%;">
+  <h2>Cadastro de Funcionário</h2>
+</div>
+<body class="bg-light p-2 bg-opacity-50">
+  <div class="container" style="margin-left: 350px; margin-top: 2%;">
+    <form Cadastro class="funcionario" action="user.register" method="post" >
+      <div class="col-sm-7">
+        <label for="matricula">Matrícula</label>
+        <input type="text" name="inputMatricula" class="form-control" placeholder="matricula" aria-label="matricula" required>
+      </div> 
 
-  <div class="col-sm-7">
-    <label for="matricula">Matrícula</label>
-    <input type="text" name="inputMatricula" class="form-control" placeholder="matricula" aria-label="matricula" required>
-  </div> 
+      <div class="col-sm-7">
+        <label for="Nome">Nome Completo</label>
+        <input type="text" name="inputNome" class="form-control" placeholder="Nome Completo" aria-label="Nome Completo" required>
+      </div>
 
-  <div class="col-sm-7">
-    <label for="Nome">Nome Completo</label>
-    <input type="text" name="inputNome" class="form-control" placeholder="Nome Completo" aria-label="Nome Completo" required>
+      <div class="col-sm-7">
+        <label for="email">E-mail</label>
+        <input type="email" name="inputEmail" class="form-control" placeholder="E-mail" aria-label="E-mail" required>
+      </div>  
+
+      <div class="col-sm-7">
+        <label for="senha">Senha</label>
+        <input type="password" name="inputSenha" class="form-control" placeholder="Senha" aria-label="Senha" required>
+      </div>  
+
+      <div class="col-sm-7">
+        <label for="senha">Repita a Senha</label>
+        <input type="password" name="inputSenhaRepetida" class="form-control" placeholder="Senha" aria-label="Senha" required>
+      </div>          
+      <br>
+      <!-- Botão Cadastrar -->
+      <button class="btn btn-warning link-dark" type="submit">Cadastrar</button>
+    </form>
   </div>
-
-  <div class="col-sm-7">
-    <label for="email">E-mail</label>
-    <input type="email" name="inputEmail" class="form-control" placeholder="E-mail" aria-label="E-mail" required>
-  </div>  
-
-  <div class="col-sm-7">
-    <label for="senha">Senha</label>
-    <input type="password" name="inputSenha" class="form-control" placeholder="Senha" aria-label="Senha" required>
-  </div>  
-
-  <div class="col-sm-7">
-    <label for="senha">Repita a Senha</label>
-    <input type="password" name="inputSenhaRepetida" class="form-control" placeholder="Senha" aria-label="Senha" required>
-  </div>          
-  <br>
-  <!-- Botão Cadastrar -->
-  <button class="btn btn-warning link-dark" type="submit">Cadastrar</button>
-  <!--   <button class="btn btn-outline-primary" type="submit">Limpar Tela</button> -->
-  </Form>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
