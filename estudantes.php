@@ -24,6 +24,12 @@
             <h2 class="section-heading">Sistema de Gerenciamento de Estudantes</h2>
             <h3 class="section-subheading text-muted">Utilize a tabela abaixo para editar ou excluir as informações sobre os estudantes.</h3>
         </div>
+
+        <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn btn-warning link-dark" type="submit">Pesquisar</button>
+      </form>
+
         <table class="table table-stripped table-hover" style="color: black;">
             <thead>
                 <th>#</th>
