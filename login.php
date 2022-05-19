@@ -10,7 +10,7 @@
     <title>Login</title>
 </head><body>
 <div id="login-form-wrap" style="margin-top: 15%;">
-  <h2>Login</h2>
+  <h2>Sistema | Senac Gerenciamento </h2>
   <Form Cadastro class="funcionario container" action="user.login" method="post">
     <p>
         <!-- <label for="matricula">Matrícula</label> -->
