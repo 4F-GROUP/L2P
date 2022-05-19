@@ -27,7 +27,7 @@
 
         <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        <button class="btn btn-warning link-dark" type="submit">Pesquisar</button>
       </form>
 
         <table class="table table-stripped table-hover" style="color: black;">
