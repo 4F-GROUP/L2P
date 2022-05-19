@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/cadastro.css">
-    <title>Listar</title>
+    <title>Busca</title>
 </head>
-<div class="titulo text-info">
-    <H1>Pesquisar Aluno</H1>
-</div>
-<body>
-    <form Listar>
-    <div class="col-sm">
-        <label for="ID">ID</label>
-        <input type="text" class="form-control" placeholder="ID" aria-label="ID" >
-      </div> 
-    <div class="col-sm">
-        <label for="CPF">CPF</label>
-        <input type="text" class="form-control" placeholder="CPF" aria-label="CPF" >
-      </div> 
-    <div class="col-sm">
-        <label for="Nome">Nome</label>
-        <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" >
-    </div>   
-    <div class="col-sm">
-        <label for="email">e-mail</label>
-        <input type="text" class="form-control" placeholder="e-mail" aria-label="E-mail" >
-    </div>       
-    <br>
-    <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
-    </form>
+<body class="bg-light p-2 bg-opacity-50">
+    <div class="container" style="width: 40%; margin-top: 13%"> 
+        <form name="form">
+            <fieldset>
+                <h3 style="text-align: center; margin-bottom: 3%; color:#00468D;">Busca</h1>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="ID">
+                    <label for="floatingInput">ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="CPF">
+                    <label for="floatingInput">CPF</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="Nome">
+                    <label for="floatingInput">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="Email">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <button class="btn btn-warning link-dark" type="submit">Pesquisar</button>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>

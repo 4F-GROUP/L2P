@@ -15,12 +15,14 @@
     <title>Alunos</title>
 </head>
 <body>
-
+<div class="btn-container mt-3 ms-3">
+    <button class="btn btn-warning link-dark mb-3" type="submit"><a class="text-decoration-none link-dark" href="home.php">Home</a></button>
+</div>
 <section class="page-section" id="estudante">
-    <div class="container">
-        <div class="text-center titulo mt-4">
+    <div class="container" style="margin-top: 3%; width: 90%;">
+        <div class="text-center titulo mt-4" style="color:#00468D;">
             <h2 class="section-heading">Sistema de Gerenciamento de Estudantes</h2>
-            <h3 class="section-subheading text-muted">Utilize a tabela abaixo para editar ou excluir as informações sobre os estudantes.</h3>
+            <p class="section-subheading text-muted" style="font-size: 24px;">Utilize a tabela abaixo para editar ou excluir as informações sobre os estudantes.</p>
         </div>
         <table class="table table-stripped table-hover" style="color: black;">
             <thead>
