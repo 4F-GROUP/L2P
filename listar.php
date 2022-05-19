@@ -30,7 +30,7 @@
         <input type="text" class="form-control" placeholder="e-mail" aria-label="E-mail" >
     </div>       
     <br>
-    <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+    <button class="btn btn-warning link-dark" type="submit">Pesquisar</button>
     </form>
 </body>
 </html>
