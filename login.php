@@ -9,16 +9,15 @@
 
     <title>Login</title>
 </head><body>
-<!-- partial:index.partial.html -->
-<div id="login-form-wrap">
+<div id="login-form-wrap" style="margin-top: 15%;">
   <h2>Login</h2>
   <Form Cadastro class="funcionario container" action="user.login" method="post">
     <p>
-        <label for="matricula">Matrícula</label>
-        <input type="text" name="inputMatricula" class="form-control" placeholder="matricula" aria-label="matricula" required>
+        <!-- <label for="matricula">Matrícula</label> -->
+        <input type="text" name="inputMatricula" class="form-control" placeholder="Usuário" aria-label="Matricula" required>
     </p>
     <p>
-        <label for="senha">Senha</label>
+        <!-- <label for="senha">Senha</label> -->
         <input type="password" name="inputSenha" class="form-control" placeholder="Senha" aria-label="Senha" required>
     </p>
     <p>
@@ -26,7 +25,7 @@
     </p>
   </form>
   <div id="create-account-wrap">
-    <p>Esqueceu a Senha? <a href="#">Recuperar Senha</a><p>
+    <!-- <p>Esqueceu a Senha? <a href="#">Recuperar Senha</a><p> -->
   </div>
 </div>
   
