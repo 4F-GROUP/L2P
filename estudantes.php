@@ -24,18 +24,12 @@
             <h2 class="section-heading">Sistema de Gerenciamento de Estudantes</h2>
             <h3 class="section-subheading text-muted">Utilize a tabela abaixo para editar ou excluir as informações sobre os estudantes.</h3>
         </div>
-
-        <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-        <button class="btn btn-warning link-dark" type="submit">Pesquisar</button>
-      </form>
-
         <table class="table table-stripped table-hover" style="color: black;">
             <thead>
                 <th>#</th>
                 <th>CPF</th>
                 <th>Nome</th>
-                <th>Endereço</th>
+                <th>Email</th>
                 <th>Criado Em</th>
                 <th>Gerir</th>
             </thead>
@@ -45,7 +39,7 @@
                     <td><?= $estudante->getId() ?></td>
                     <td><?= $estudante->getCPF() ?></td>
                     <td><?= $estudante->getNome() ?></td>
-                    <td><?= $estudante->getEndereco() ?></td>
+                    <td><?= $estudante->getEmail() ?></td>
                     <td><?= $estudante->getCriadoEm() ?></td>
                     <td>
                         <a href="estudante.details.php?id=<?= $estudante->getId() ?>"><i class="bi bi-pencil-square"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

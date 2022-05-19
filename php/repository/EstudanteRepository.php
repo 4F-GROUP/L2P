@@ -109,7 +109,7 @@ class EstudanteRepository
     public function fnLocalizarEstudanteID($id) {
         try {
 
-            $query = "SELECT id, cpf, nome, email, telefone, nascimento, endereco, bairro, escolaridade, instituicao, instituicaonome, curso, motivo, escolha, experiencia, expectativa, criado_em criadoEm FROM estudante WHERE  id = :pid";
+            $query = "SELECT * FROM estudante WHERE  id = :pid";
 
             $stmt = $this->conn->prepare($query);
             $stmt->bindParam(':pid', $id);

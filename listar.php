@@ -1,3 +1,8 @@
+<?php 
+  require_once('config/config.php');
+  $EstudanteService = new EstudanteService(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,25 +17,46 @@
     <H1>Pesquisar Aluno</H1>
 </div>
 <body>
-    <form Listar>
+<?php foreach ($EstudanteService->listar(20) as $index => $estudante): ?>
+    <form Listar.ID class="estudante" action="busca?id=<?= $estudante->getId() ?>" method="post" >
     <div class="col-sm">
         <label for="ID">ID</label>
-        <input type="text" class="form-control" placeholder="ID" aria-label="ID" >
-      </div> 
+        <input type="text" name="inputIdentificador" class="form-control" placeholder="ID" aria-label="ID" >
+      </div>       
+    <br>
+    <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+    </form>
+    <br>
+    <hr>
+    <form Listar>
     <div class="col-sm">
         <label for="CPF">CPF</label>
         <input type="text" class="form-control" placeholder="CPF" aria-label="CPF" >
-      </div> 
+      </div>      
+    <br>
+    <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+    </form>
+    <br>
+    <hr>
+    <form Listar>   
     <div class="col-sm">
         <label for="Nome">Nome</label>
         <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" >
-    </div>   
+    </div>       
+    <br>
+    <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+    </form>
+    <br>
+    <hr>
+    <form Listar>
     <div class="col-sm">
-        <label for="email">e-mail</label>
+        <label for="email">E-mail</label>
         <input type="text" class="form-control" placeholder="e-mail" aria-label="E-mail" >
     </div>       
     <br>
     <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
     </form>
+    
+<?php endforeach; ?>
 </body>
 </html>
