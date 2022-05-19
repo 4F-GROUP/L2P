@@ -11,7 +11,7 @@
 </head><body>
 <!-- partial:index.partial.html -->
 <div id="login-form-wrap">
-  <h2><b>Senac</b> | Gerenciamento</h2>
+  <h2>Login</h2>
   <Form Cadastro class="funcionario container" action="user.login" method="post">
     <p>
         <label for="matricula">Matrícula</label>
@@ -22,7 +22,7 @@
         <input type="password" name="inputSenha" class="form-control" placeholder="Senha" aria-label="Senha" required>
     </p>
     <p>
-    <input type="submit" id="login" value="Login">
+    <input type="submit" id="login" value="Entrar">
     </p>
   </form>
   <div id="create-account-wrap">
